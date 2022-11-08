@@ -1,3 +1,11 @@
+---
+layout: post
+title: Lift-Splat-Shoot总结
+date: 2022-11-108
+tags: jekyll   
+---
+
+
 # 《Lift, Splat, Shoot: Encoding Images from Arbitrary Camera Rigs by Implicitly Unprojecting to 3D》
 目前的计算机视觉算法任务，基于输出结果是否与输入图像在同一个参考系下，可以分为两类：
 
