@@ -2,7 +2,7 @@
 layout: post
 title: Lift-Splat-Shoot总结
 date: 2022-11-108
-tags: jekyll   
+tags: BEV  
 ---
 
 
