@@ -37,7 +37,7 @@ Lift是指将多视角的相机图像从扁平的透视空间，“提升”到3
 
 ![](../img/2.png)
 
-# Reference
+# References
 [Lift-Splat-Shoot：论文、代码解析](https://blog.csdn.net/weixin_45112559/article/details/127186229)
 
 [LSS-lift splat shoot论文与代码解读](https://blog.csdn.net/weixin_41803339/article/details/127140039?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&utm_relevant_index=1)
