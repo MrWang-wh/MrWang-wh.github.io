@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Lift-Splat-Shoot总结
-date: 2022-11-108
+date: 2022-11-08
 tags: BEV  
 ---
 
