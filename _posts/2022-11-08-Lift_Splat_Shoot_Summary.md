@@ -36,3 +36,15 @@ Lift是指将多视角的相机图像从扁平的透视空间，“提升”到3
 对splat得到的特征进行编解码处理，实际上可以看作bev特征提取器，将编解码后的特征用于目标任务。
 
 ![](../img/2.png)
+
+# Reference
+[Lift-Splat-Shoot：论文、代码解析](https://blog.csdn.net/weixin_45112559/article/details/127186229)
+
+[LSS-lift splat shoot论文与代码解读](https://blog.csdn.net/weixin_41803339/article/details/127140039?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&utm_relevant_index=1)
+
+[Lift, Splat, Shoot: Encoding Images from Arbitrary Camera Rigs by Implicitly Unprojecting to 3D](https://blog.csdn.net/qq_30483585/article/details/125234126?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-125234126-blog-126779393.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-1-125234126-blog-126779393.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=1)
+
+[[paper] lift,splat,shooting 论文浅析](https://blog.csdn.net/weixin_51449137/article/details/126662391?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-126662391-blog-126779393.pc_relevant_layerdownloadsortv1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-126662391-blog-126779393.pc_relevant_layerdownloadsortv1&utm_relevant_index=3)
+
+[Lift, Splat, Shoot 翻译](https://blog.csdn.net/weixin_43889128/article/details/121787398?spm=1001.2101.3001.6650.6&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-121787398-blog-123840434.pc_relevant_multi_platform_whitelistv4&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-6-121787398-blog-123840434.pc_relevant_multi_platform_whitelistv4&utm_relevant_index=6)
+
