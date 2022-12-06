@@ -45,7 +45,7 @@ Lift是指将多视角的相机图像从扁平的透视空间，“提升”到3
 在Lift操作中，得到了一系列点及其特征。在车辆周围划分网格，将Lift操作中得到的每个点分配到每个网格当中，然后进行sum pooling操作（对每个网格中的点特征求和），再通过resnet网络降维，拍扁，最终得到多个视角图像融合的BEV特征。
 ## shoot
 对splat得到的特征进行编解码处理，实际上可以看作bev特征提取器，将编解码后的特征用于目标任务。
-![](../../../img/LLSS/2.png)
+![](../../../img/LSS/2.png)
 ![](../img/LSS/2.png)
 ## References
 [Lift-Splat-Shoot：论文、代码解析](https://blog.csdn.net/weixin_45112559/article/details/127186229)
