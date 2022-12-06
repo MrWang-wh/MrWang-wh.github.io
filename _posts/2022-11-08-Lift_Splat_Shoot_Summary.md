@@ -35,8 +35,8 @@ Lift是指将多视角的相机图像从扁平的透视空间，“提升”到3
 
 单目相机融合的难点在于像素的深度未知，LSS的做法是为每一个像素通过网络预测一个深度。具体做法是给每个像素在一系列可能的离散深度值上预测一个概率向量$\alpha = [\alpha_0 ,\alpha_1,\alpha_2,...,\alpha_{D-1}]^T$。假设通过backbone在每个像素上提取到的特征维度为C，那么每个像素点的特征向量为$c=[c_0,c_1,c_2,...,c_{c-1}]^T$,则最终该像素在深度值d的特征$c_d=\alpha_dc$,即相当于让概率向量与特征向量做外积$c\alpha^T$，实现增维的操作。
 
-![](../../../img/1.png)
-![](../img/1.png)
+![](../../../img/LSS/1.png)
+![](../img/LSS/1.png)
 
 经过这一步操作就相当于在每个像素的每个离散深度值上都创造了一个点，之后再将这每个点通过相机内参和外参投影到自车坐标系下，则就完成了Lift操作。
 
@@ -45,10 +45,9 @@ Lift是指将多视角的相机图像从扁平的透视空间，“提升”到3
 在Lift操作中，得到了一系列点及其特征。在车辆周围划分网格，将Lift操作中得到的每个点分配到每个网格当中，然后进行sum pooling操作（对每个网格中的点特征求和），再通过resnet网络降维，拍扁，最终得到多个视角图像融合的BEV特征。
 ## shoot
 对splat得到的特征进行编解码处理，实际上可以看作bev特征提取器，将编解码后的特征用于目标任务。
-![](../../../img/2.png)
-![](../img/2.png)
-
-# References
+![](../../../img/LLSS/2.png)
+![](../img/LSS/2.png)
+## References
 [Lift-Splat-Shoot：论文、代码解析](https://blog.csdn.net/weixin_45112559/article/details/127186229)
 
 [LSS-lift splat shoot论文与代码解读](https://blog.csdn.net/weixin_41803339/article/details/127140039?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-127140039-blog-127186229.pc_relevant_aa&utm_relevant_index=1)
